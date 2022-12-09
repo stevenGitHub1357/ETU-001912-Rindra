@@ -102,7 +102,7 @@ public class Tableau1 extends JPanel{
         public void message1(JLabel[] lab,Vector<String> str,JLabel[] lab1,Vector<String> str1){
         	int y =5; int x =200; int y1=5;
        		//System.out.println(anatiny.length);
-        	for(int i=2;i<lab.length;i++){
+        	for(int i=0;i<lab.length;i++){
                 contenu.setLayout(null);
                 lab[i] = new JLabel(str.get(i));
                 lab[i].setBounds(10,y,200,20);
@@ -115,7 +115,7 @@ public class Tableau1 extends JPanel{
                 y = y+30; 
                 //System.out.println(y);
         	}
-        	for(int p=2;p<lab1.length;p++){
+        	for(int p=0;p<lab1.length;p++){
             	lab1[p] = new JLabel(str1.get(p));
             	lab1[p].setBounds(x,y1,200,20);
             	lab1[p].setForeground(Color.gray);
